@@ -1,5 +1,6 @@
 [build]
-  command = "python3 -m mkdocs build --config-file mkdocs.yml"
+  command = "python3 -m pip install -U mkdocs && python3 -m mkdocs build --config-file mkdocs.yml"
+
   publish = "site"
 
 [build.environment]
