@@ -4,7 +4,11 @@ copyright: "Copyright &copy; 2022 JRB 9000"
 site_url: https://jackbanaszak.com
 repo_url: https://github.com/jrb9000/JBdocs
 repo_name: jrb9000/JBdocs
+site_description: Excelent coder energy
+remote_branch: master
+remote_name: origin
 docs_dir: docs
+site_dir: site
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:
