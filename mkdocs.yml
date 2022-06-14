@@ -1,0 +1,83 @@
+site_name: Cod3R Brolab
+site_author: Cod3R
+copyright: "Copyright &copy; 2022 JRB 9000"
+site_url: https://jackbanaszak.com
+repo_url: https://github.com/jrb9000/JBdocs
+repo_name: jrb9000/JBdocs
+docs_dir: docs
+
+# https://squidfunk.github.io/mkdocs-material/
+theme:
+  name: material
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep orange
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/logo.png
+  # Nav: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#configuration
+  features:
+    # When instant loading is enabled, clicks on all internal links will be intercepted and dispatched via XHR without fully reloading the page.
+    - navigation.instant
+    # When anchor tracking is enabled, the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents.
+    - navigation.tracking
+    # When tabs are enabled, top-level sections are rendered in a menu layer below the header for viewports above 1220px, but remain as-is on mobile.
+    - navigation.tabs
+    # When sticky tabs are enabled, navigation tabs will lock below the header and always remain visible when scrolling down.
+    - navigation.tabs.sticky
+    # When sections are enabled, top-level sections are rendered as groups in the sidebar for viewports above 1220px, but remain as-is on mobile.
+    - navigation.sections
+    # When expansion is enabled, the left sidebar will expand all collapsible subsections by default, so the user doesn't have to open subsections manually.
+    - navigation.expand
+    # When section index pages are enabled, documents can be directly attached to sections, which is particularly useful for providing overview pages.
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/
+    - header.autohide
+  shortcuts:
+        help: 191    # ?
+        next: 39     # n
+        previous: 80 # p
+        search: 70   # s
+
+plugins:
+  - search
+  #- social # https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/#built-in-social-plugin
+  - tags # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#configuration
+    # tags_file: about/tags.md
+
+# Navigation
+nav:
+  - Home: index.md
+  - About:
+    - 'The Cod3R Bro': about/index.md
+    - 'Tags': about/tags.md
+    - 'License': about/license.md
+    - 'Build the Site': about/mksite.md
+# https://python-markdown.github.io/extensions/ && https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
+markdown_extensions:
+  - abbr         # The Abbreviations extension adds the ability to define abbreviations defined with the <abbr> tag.
+  - attr_list    # adds a syntax to define attributes on the various HTML elements in markdown’s output.
+  - def_list     # adds the ability to create definition lists in Markdown documents.
+  - footnotes    # adds syntax for defining footnotes in Markdown documents.
+  - tables       # The Tables extension adds the ability to create tables in Markdown documents.
+  - admonition   # adds rST-style admonitions to Markdown documents.
+  - sane_lists   # Alters the behavior of the Markdown List syntax to be less surprising.
