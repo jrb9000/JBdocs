@@ -21,7 +21,7 @@ theme:
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: deep orange
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
@@ -56,6 +56,7 @@ theme:
     - search.share
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/
     - header.autohide
+
   shortcuts:
         help: 191    # ?
         next: 39     # n
@@ -85,3 +86,9 @@ markdown_extensions:
   - tables       # The Tables extension adds the ability to create tables in Markdown documents.
   - admonition   # adds rST-style admonitions to Markdown documents.
   - sane_lists   # Alters the behavior of the Markdown List syntax to be less surprising.
+  # 3rd Party Extensions
+  - pymdownx.details # Details is an extension that creates collapsible elements that hide their content. It uses the HTML5 <details><summary> tags to accomplish this.
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tasklist

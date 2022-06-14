@@ -63,3 +63,48 @@ The Admonition extension adds rST-style admonitions to Markdown documents.
 
 !!! failure "failure"
     Failure message
+
+
+### pymdownx.details
+
+```
+??? optional-class "Summary"
+    Here's some content.
+
+??? multiple optional-class "Summary"
+    Here's some content.
+```
+
+??? optional-class "Summary"
+    Here's some content.
+
+??? multiple optional-class "Summary"
+    Here's some content.
+
+**Nested Details**
+
+```
+???+ note "Open styled details"
+
+    ??? danger "Nested details!"
+        And more content again.
+```
+
+???+ note "Open styled details"
+
+    ??? danger "Nested details!"
+        And more content again.
+
+
+### pymdownx.emoji
+
+
+The Emoji extension adds support for inserting emoji via simple short names enclosed within colons: :short_name: :grinning:
+
+
+### SuperFences
+
+-   Allowing the nesting of fences under blockquotes, lists, or other block elements (see Limitations for more info).
+-   Ability to specify custom fences to provide features like flowcharts, sequence diagrams, or other custom blocks.
+-   Allow disabling of indented code blocks in favor of only using the fenced variant (off by default).
+-   Experimental feature that preserves tabs within a code block instead of converting them to spaces which is Python Markdown's default behavior.
